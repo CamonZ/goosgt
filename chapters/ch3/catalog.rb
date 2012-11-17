@@ -4,7 +4,9 @@ class Catalog
   def initialize
     @items = {}
   end
+
   def add(entry)
+    raise ArgumentError.new if @items.keys.include?(entry.name)
     @items[entry.name] = entry
   end
 
