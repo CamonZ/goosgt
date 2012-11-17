@@ -5,6 +5,11 @@ describe Catalog do
   let!(:catalog) { Catalog.new }
   let!(:add_entry) { catalog.add(entry) }
 
-  specify { catalog.contains?(entry).should be == true }
-  specify { catalog.entry_for("fish").should be == entry }
+  it "contains an added entry" do
+    catalog.contains?(entry).should be == true
+  end
+
+  it "indexes entries by name" do
+    catalog.entry_for("fish").should be == entry
+  end
 end
