@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+ruby '1.9.3'
+
+gem 'rspec'
+gem 'guard'
+gem 'guard-rspec'
+gem 'simplecov'
+gem 'simplecov-sublime-ruby-coverage'
+gem 'debugger'
+gem 'rb-fsevent'

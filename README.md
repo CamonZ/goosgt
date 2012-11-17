@@ -1,0 +1,1 @@
+Examples from Growing Object Oriented Software, Guided by Test in Ruby with RSpec
